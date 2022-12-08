@@ -1,0 +1,85 @@
+@media screen and (min-width: 375px) and (max-width: 991px) {
+    * {
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    body {
+        background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    main {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    picture img {
+        width: 280px;
+        margin-bottom: -90px;
+        z-index: 1;
+    }
+
+    section {
+        background-color: white;
+        margin: auto;
+        padding-top: 150px;
+        width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+        border-radius: 20px;
+        z-index: -1;
+    }
+
+    h1 {
+        text-align: center;
+        color: hsl(237, 12%, 33%);
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 90% 10%;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: hsl(237, 12%, 33%);
+        font-weight: 400;
+        font-size: 14px;
+    } 
+
+    div img {
+        margin: auto;
+    }
+
+    section p {
+        color: hsl(240, 6%, 50%);
+        font-size: 12px;
+        line-height: 1.5;
+        display: none;
+    }
+
+    hr {
+        color: hsl(240, 5%, 91%);
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+        color: hsl(237, 12%, 33%);
+    }
+
+    footer > a, footer > a:visited {
+        color:hsl(237, 12%, 33%);
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
