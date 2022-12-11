@@ -48,8 +48,19 @@
         grid-template-columns: 90% 10%;
         align-items: center;
         width: 100%;
-        border: none;
-        background-color: white;
+        /*border: none;
+        background-color: white;*/
+    }
+
+    .questions:hover {
+        color:hsl(237, 12%, 33%);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .active {
+        color:hsl(237, 12%, 33%);
+        font-weight: 700;
     }
 
     h2 {
@@ -88,6 +99,115 @@
 
     footer > a, footer > a:visited {
         color:hsl(237, 12%, 33%);
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    * {
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    html {
+        height: 100%;
+        display: flex;
+
+    }
+
+    body {
+        background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;;
+    }
+
+    main {
+        /* width: 960px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    picture img {
+        margin-left: -60px;
+        margin-right: 50px;
+    }
+
+    section {
+        padding-right: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 360px;
+    }
+
+    h1 {
+        color: hsl(237, 12%, 33%);
+    }
+
+    .questions {
+        display: grid;
+        grid-template-columns: 90% 10%;
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    .questions:hover {
+        /* color: hsl(237, 12%, 33%); */
+        /* font-weight: 700; */
+        cursor: pointer;
+    }
+
+    .active {
+        color: hsl(237, 12%, 33%);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: hsl(237, 12%, 33%);
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    h2:hover {
+        color: #f47b56;
+    }
+
+    .questions img {
+        margin: auto;
+    }
+
+    .answers {
+        color:hsl(240, 6%, 50%);
+        font-size: 12px;
+        line-height: 1.5;
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    hr {
+        color:hsl(240, 5%, 91%);
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+        color: hsl(237, 12%, 33%);
+    }
+
+    footer > a, footer > a:visited {
+        color: hsl(237, 12%, 33%);
         font-weight: 700;
         text-decoration: none;
     }
